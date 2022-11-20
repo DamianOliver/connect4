@@ -34,7 +34,7 @@ class UI:
         circle_size = self.cell_size[0] * 0.85 / 2
         for i in range(len(position)):
             location = (i % game.board_dimension[0] * self.cell_size[0], int(i / (game.board_dimension[1] + 1)) * self.cell_size[1])
-            # location = (location[0] + self.board_location[0] + margin + circle_size, location[1] + self.board_location[1] + margin + circle_size)
+            location = (location[0] + self.board_location[0] + margin + circle_size, location[1] + self.board_location[1] + margin + circle_size)
             if position[i] == "empty":
                 color = BACKRGOUND_COLOR
             else:
